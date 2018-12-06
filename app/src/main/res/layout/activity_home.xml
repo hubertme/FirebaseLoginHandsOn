@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    tools:context=".HomeActivity">
+
+    <TextView
+        android:id="@+id/textView_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="100dp"
+        android:textColor="#000000"
+        android:textSize="36sp"
+        android:textAlignment="center"
+        android:text="Welcome to the application!"/>
+
+    <TextView
+        android:id="@+id/textView_emailDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView_welcome"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:text="Email goes here..."
+        android:layout_marginTop="30dp"/>
+
+    <Button
+        android:id="@+id/button_signOut"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="Sign Out"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textView_emailDisplay"
+        android:layout_marginTop="30dp"/>
+
+    <Button
+        android:id="@+id/button_delete"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="Delete this account"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/button_signOut"
+        android:layout_marginTop="30dp"/>
+
+</RelativeLayout>
